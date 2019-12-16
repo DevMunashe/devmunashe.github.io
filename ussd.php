@@ -35,9 +35,7 @@ if ( $text == "" ) {
   $response .= "1. Buy Goods \n";
   $response .= "2. Check Points";
   $response .= "3. Back";
- // $accountNumber  = "ACC1001";
-  // This is a terminal request. Note how we start the response with END
-  $response = "END Your account number is $accountNumber";
+
  
 }else if ( $text == "1*1*1" ) {
       $response = "CON Select Location \n";
@@ -47,10 +45,6 @@ if ( $text == "" ) {
       $response .= "4. Kanye";
       $response .= "5. Kasane";
       $response .= "6. Ghanzi";
-   // This is a second level response where the user selected 1 in the first instance
-  // $balance  = "NGN 10,000";
-   // This is a terminal request. Note how we start the response with END
-   $response = "END Your balance is $balance";
 
 }
 else if ( $text == "1*1*1*3" ) {
@@ -60,10 +54,6 @@ else if ( $text == "1*1*1*3" ) {
       $response .= "3. Haskins";
       $response .= "4. Eezee Build";
       $response .= "5. Cashbuikd";
-   // This is a second level response where the user selected 1 in the first instance
-  // $balance  = "NGN 10,000";
-   // This is a terminal request. Note how we start the response with END
-   //$response = "END Your balance is $balance";
 
 }
 
@@ -74,19 +64,6 @@ else if ( $text == "1*1*1*3*1" ) {
       $response .= "3. Tiles";
       $response .= "4. Bricks";
       $response .= "5. Plumbing";
-   // This is a second level response where the user selected 1 in the first instance
-  // $balance  = "NGN 10,000";
-   // This is a terminal request. Note how we start the response with END
-   //$response = "END Your balance is $balance";
-
-}
-else if ( $text == "1*1*1*3*1*1" ) {
-      $response = "CON Enter number of Cements: \n";
-      
-   // This is a second level response where the user selected 1 in the first instance
-  // $balance  = "NGN 10,000";
-   // This is a terminal request. Note how we start the response with END
-   //$response = "END Your balance is $balance";
 
 }
 // Print the response onto the page so that our gateway can read it
