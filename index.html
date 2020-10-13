@@ -1,589 +1,279 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
+
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>DevMunashe - Full-Stack Mobile & Web Developer</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
-	<style>
-.myDiv {
-  background-color: white;
-}
-</style>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Ryan Fitzgerald</h1>
+            <h2>Software Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
-      <nav id="nav-wrap">
+        <div id="lead-overlay"></div>
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-         
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Munashe Shonge,</h1>
-            <h3>a global <span>Full-Stack Mobile</span>, <span>& Web Developer</span> passionate about innovation
-            and developing inclusive software for people. My core strength is Mobile & Web solutions for startups, SMEs and large organizations. Let's work together to build amazing products that work for people. 
-            <a class="smoothscroll" href="#about">Click here and find out more  about me</a>.</h3>
-            <hr />
-             <ul class="social">
-            <li><a href="https://www.linkedin.com/in/munasheshonge"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.github.com/DevMunashe/"><i class="fa fa-github"></i></a></li>
-            <li><a href=" https://www.facebook.com/mnashe.sweet"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/munasheshonge"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/munasheshonge/"><i class="fa fa-instagram"></i></a></li>  
-          </ul>
-
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>Passionate Mobile & Web Developer with at least 3 years of
-               experience using innovative technologies. I have a strong passion to build digital solutions that make an impact on people's lives. Agile collaboration enthusiast who is positive and agreeable, can work either onsite or remote. I continue to immerse myself in the latest & greatest technologies of the future. Currently I am working as a remote or onsite Freelance Develeoper but I'm also open to the possibility of relocation anywhere.
-            </p>
-
+    <div id="about">
+        <div class="container">
             <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
+                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
+                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-               <div class="columns contact-details">
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
 
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Munashe Shonge</span><br>
-						   <span>
-						         Gaborone, Botswana
-                     </span><br>
-						   <span>+ (267)779 02350</span><br>
-                     <span>munasheshonge[at]gmail.com</span>
-					   </p>
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
 
-               </div>
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
-              <!-- <div class="columns download">
-                  <p>
-                     <a href="docs/Munashe_Shonge_CV.pdf" class="button"><i class="fa fa-download"></i>Download CV</a>
-                  </p>
-               </div>-->
-
-               <!-- linkedin page -->
-               <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="munasheshonge"><a class="LI-simple-link" href='https://bw.linkedin.com/in/munasheshonge?trk=profile-badge'>Munashe Shonge</a></div>
-               
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3><a href="http://www.uz.ac.zw/">University of Zimbabwe</a></h3>
-                  <p class="info">BSc Honors Computer Science (CLASS 2.1)<span>&bull;</span> <em class="date">June 2017</em></p>
-
-                  <p>
-                  Studied comprehensive courses in a 4 year full-time programme with internship. Main areas of study where across Programming Languages, Databases, Artificial Intelligence, Cybersecurity, Networking, Computer Graphics, Descrete Maths, Data Structures & Algorithms and Entreprenuership.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <!--<div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>School of Cool Designers</h3>
-                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>-->
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>BIGGLESBOOKS PTY LTD | GABORONE, BOTSWANA</h3>
-                  <p class="info">Freelance Mobile Developer<span>&bull;</span> <em class="date">October 2019 - PRESENT</em></p>
-
-                  <p>
-                Full-Stack development of an eBooks App targeting Android & iOS platforms. I cut development time and development costs by 40% through use of Google Flutter and Google Firebase technologies as well as automated tests. This project was fully remote, the project owner was 400 miles away and I collaborated with a Designer in Tanzania.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-  <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>GRIFFIN SECURITY SOLUTIONS | HARARE, ZIMBABWE</h3>
-                  <p class="info">Surveillance Software Development & Integration <span>&bull;</span> <em class="date">May 2016 - September 2018</em></p>
-
-                  <p>
-                  Developed custom mobile surveillance software for parents to remotely
-monitor their kids’ activity at kindergarten facilities. Used the RTSP protocol to
-integrate with any existing IP CCTV system. The kindergarten owners registered
-a growth in parents’ experience and comfort in their service at a time when
-incidents of school kids being kidnapped were rife in various primary schools.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>ASTRO MOBILE AFRICA | HARARE, ZIMBABWE</h3>
-                  <p class="info">Full-Stack Software Development Intern <span>&bull;</span> <em class="date">May 2014 - August 2015</em></p>
-
-                  <p>
-                  Improved smartphone sales with the development of a Native Android field sales tracking solution for sales agents. Developed the admin portal for the sales app using Java SE and enabled real-time tracking.
-                  Improved my productivity with Agile project management tools like <a href="https://www.asana.com">Asana</a> and DevOps tools notably <a href="https://www.github.com">GitHub</a> for collaboration within our 5 member team.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills & Tech Stack</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>I am continually developing my skills across multiple technologies in the area of Mobile and Web development with experience ranging from Beginner to Advanced. 
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
             </p>
+        </div>
+        <!-- End .education-block -->
 
-<a frameborder="0" data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/f322fa48d197ca865735164cf955db"/></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
-				<div class="bars">
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
-				   <ul class="skills">
-					   <li><span class="bar-expand android"></span><em>Android Native</em></li>
-                  <li><span class="bar-expand flutter"></span><em>Google Flutter</em></li>
-						<li><span class="bar-expand wordpress"></span><em>WordPress</em></li>
-						<li><span class="bar-expand react"></span><em>React Native</em></li>
-						<li><span class="bar-expand python"></span><em>Python</em></li>
-                  <li><span class="bar-expand javascript"></span><em>JavaScript</em></li>
-                  <li><span class="bar-expand php"></span><em>PHP</em></li>
-                  <li><span class="bar-expand java"></span><em>Java</em></li>
-                  <li><span class="bar-expand mssql"></span><em>MSSQL</em></li>
-                  <li><span class="bar-expand firebase"></span><em>Google Firebase</em></li>
-                  <li><span class="bar-expand git"></span><em>Git SCM</em></li>
-					</ul>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-				</div><!-- end skill-bars -->
-
-
-			</div> <!-- main-col end -->
-
-
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/biggles.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Biggles & Boggles Books App Demo</h5>
-                              <p>Mobile App</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/binary.JPG">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Binary USSD App Demo</h5>
-                              <p>USSD App</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/farmsyt.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Farmsyt App</h5>
-                              <p>Mobile App</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/sandvik.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>DataTaker Integration</h5>
-                              <p>Industrial Data Logger</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/biggles.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>BigglesBooks Mobile App</h4>
-			      <p><a href="https://www.bigglesandboggles.com">Biggles & Boggles</a> is a Botswana based books publication company which operates virtually. To expand their digital offerings and reach they wanted a eBooks app. For this Full Stack App I used Flutter & Google Firebase.<br>
-                  <a href="https://play.google.com/store/apps/details?id=com.read.bigglesbooks"><img src="images/googleplay.png" width="200" height="50"></a>
-              
-               </p>
-               <span class="categories"><i class="fa fa-tag"></i>#Flutter, #Firebase</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://bigglesandboggles.wixsite.com/mysite">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
             </div>
+        </div>
+    </div>
+    <!-- End #projects -->
 
-	      </div><!-- modal-01 End -->
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
 
-		      <img class="scale-with-grid" src="images/binary.JPG" alt="" />
-
-		      <div class="description-box">
-			      <h4>Binary USSD App</h4>
-			      <p>Binary USSD app is to target marginalised communities who dont have much mobile technology coverage. It is a startup idea by a Mr Moreri looking to partner Telcos. For the demo I used <a href="https://africastalking.com/">Africa's Talking</a> and PHP.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Mobile App, USSD</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://africastalking.com/">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 YOUR NAME
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </footer>
+    <!-- End footer -->
 
-	      </div><!-- modal-02 End -->
-
-          <div id="modal-03" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/farmsyt.png" alt="" />
-
-            <div class="description-box">
-               <h4>Farmsyt Mobile App</h4>
-               <p>Farmsyt is an opensource offline-first minimalist mobile app for smallholder farmers to record daily farm data on the move. It is in response to the lack of data on smallholder operations. Development is ongoing and done with Google Flutter.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Mobile App, Google Flutter</span>
-            </div>
-
-            <div class="link-box">
-               <a href="https://github.com/DevMunashe/Farmsyt">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-03 End -->
-
-           <div id="modal-04" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/sandvik.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>DataTaker Integration</h4>
-               <p>The DataTaker device is an industrial data logger for which I created an admin dashboard in Java to see real time sensor data polled from DataTaker. This project was for Sandvik and I converted a proprieatry HTML based API to JSON format. The Java Desktop Dashboard I developed quickly generated test reports for mining customers.
-                  <br>
-                  <a href="https://devmunashe.github.com/images/datataker.jpg">PIC: DataTaker Industrial Data Logger</a>
-
-               </p>
-               <span class="categories"><i class="fa fa-tag"></i>#JAVA SWING, DATATAKER</span>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.thermofisher.com.au/show.aspx?page=/ContentAUS/Manufacturing-Processing/Industrial-Loggers/DataTaker/DataTaker.html">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-04 End -->
-
-         
-
-	   
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="seven columns">
-
-            <h2><a class="smoothscroll" href="#about">I am available to join your team & work on your exciting project, either onsite or remote. Let's get in touch.</a></h2>
-           
-
-         </div>
-
-         <div class="three columns action">
-
-            <a href="#about" class="button">Contact Me</a>
-
-         </div>
-
-      </div>
-
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Thank you so much for the demo. We are thouroughly impressed. We are currently working on 
-                              an offer for you...
-                           </p>
-                           <cite><a href="https://bigglesandboggles.wixsite.com/mysite">Biggles & Boggles</a> -Botswana</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-            
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-           <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/munasheshonge"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.github.com/DevMunashe/"><i class="fa fa-github"></i></a></li>
-            <li><a href=" https://www.facebook.com/mnashe.sweet"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/munasheshonge"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/munasheshonge/"><i class="fa fa-instagram"></i></a></li>  
-          </ul>
-
-          
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
