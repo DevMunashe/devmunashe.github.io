@@ -15,7 +15,7 @@
 .content__container{
   font-weight: 600;
   overflow: hidden;
-  height: 40px;
+  height: 60px;
   padding:0 40px;
 }
 .content__container:before{
