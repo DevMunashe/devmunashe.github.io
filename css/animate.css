@@ -60,7 +60,7 @@
   animation-iteration-count:infinite;
 }
 .content__container__list__item{
-  line-height: 40px;
+  line-height: 60px;
   margin:0;
 }
 @-webkit-keyframes opacity{
